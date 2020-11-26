@@ -52,12 +52,12 @@ navItems[3].textContent = siteContent['nav']['nav-item-4'];
 navItems[4].textContent = siteContent['nav']['nav-item-5'];
 navItems[5].textContent = siteContent['nav']['nav-item-6'];
 
-navItems[0].style.color = "green";
-navItems[1].style.color = "green";
-navItems[2].style.color = "green";
-navItems[3].style.color = "green";
-navItems[4].style.color = "green";
-navItems[5].style.color = "green";
+navItems[0].style.color = "purple";
+navItems[1].style.color = "purple";
+navItems[2].style.color = "purple";
+navItems[3].style.color = "purple";
+navItems[4].style.color = "purple";
+navItems[5].style.color = "purple";
 
 const navBar = document.querySelector('nav');
 const addNav1 = document.createElement('a');
@@ -65,7 +65,7 @@ const addNav2 = document.createElement('a');
 
 addNav1.href = '#';
 addNav1.textContent = 'Home';
-addNav1.style.color = 'green';
+addNav1.style.color = 'purple';
 
 addNav2.href = '#';
 addNav2.textContent = 'Lexi';
@@ -88,6 +88,13 @@ navBar.append(addNav2);
  ctaButton.style.color = "Red";
 
  document.getElementById("cta-img").src = "img/header-img.png";
+
+ const push = document.querySelector('button').onclick = displayNew;
+
+ function displayNew() {
+   document.querySelector('button').innerText = "New Text Yo"
+   document.querySelector('h1').innerText = "New Heading Hello"
+ }
 
 
  /**********************************************
